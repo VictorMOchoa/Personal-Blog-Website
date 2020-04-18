@@ -1,0 +1,29 @@
+html * {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+#running-icon-span {
+  font-size: 35px;
+  color: Dodgerblue;
+}
+
+#blog-header {
+  margin-top: 25px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+#blog-name {
+  letter-spacing: 1px;
+  font-size: 30px;
+  display: inline;
+}
+
+#sidebar-menu > a {
+  margin: 10px 25px;
+  display: flex;
+}
