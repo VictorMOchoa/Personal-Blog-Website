@@ -1,4 +1,6 @@
 html * {
+  /* background-color: #F5F5F5; */
+  /* background-color: #F8F8FF; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -26,4 +28,19 @@ html * {
 #sidebar-menu > a {
   margin: 10px 25px;
   display: flex;
+}
+
+#blog-post-container {
+  display: flex;
+  margin-left: 125px;
+  margin-top: 25px;
+}
+
+#blog-posts {
+  background-color: #F5DEB3;
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-right: 25px;
 }
