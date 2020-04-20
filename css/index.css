@@ -6,6 +6,7 @@ html * {
 
 .flex-grid {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #running-icon-span {
@@ -34,13 +35,18 @@ html * {
   display: flex;
   margin-left: 125px;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 #blog-posts {
+  text-align: center;
   background-color: #F5DEB3;
   width: 200px;
   height: 300px;
   padding: 20px;
   border-radius: 20px;
   margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
