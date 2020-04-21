@@ -1,0 +1,74 @@
+html * {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns : 150px 350px 500px;
+  grid-template-rows: 70px 450px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  "hd hd hd hd hd"
+  "sd bp bp bp bp"
+  "ft ft ft ft ft";
+
+}
+
+#header {
+  margin-left: 60px;
+  grid-area: hd;
+}
+
+#footer {
+  grid-area: ft;
+  align-items: center;
+  text-align: center;
+}
+
+#github {
+  color: grey;
+  font-size: 12px;
+}
+
+#blog-post-container {
+  grid-area: bp;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidebar-menu {
+  grid-area: sd;
+}
+
+#sidebar-menu > a {
+  display: flex;
+  margin: 5px 0px;
+  color: orange;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+#running-icon-span {
+  font-size: 35px;
+  color: orange;
+}
+
+#blog-name {
+  letter-spacing: 1px;
+  font-size: 30px;
+  display: inline;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#divider {
+  margin-right: 60px;
+}
