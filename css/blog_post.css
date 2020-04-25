@@ -1,13 +1,31 @@
-#blog-posts {
+ #blog-posts {
   text-align: center;
-  background-color: #F5DEB3;
+  background-color: #dedede;
   width: 500px;
-  height: 300px;
+  height: 400px;
   padding: 20px;
-  border-radius: 20px;
-  margin-right: 25px;
+  border-radius: 10px;
   margin-left: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media(max-width:1040px) {
+  #blog-posts {
+   text-align: center;
+   font-size: 10px;
+   background-color: #dedede;
+   width: 400px;
+   height: 300px;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+ }
+}
+
+
+#card-image {
+  width: 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
