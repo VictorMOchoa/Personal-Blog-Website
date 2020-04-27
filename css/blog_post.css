@@ -1,8 +1,10 @@
+
  #blog-posts {
   text-align: center;
   background-color: #dedede;
+  font-size: 14px;
   width: 500px;
-  height: 420px;
+  height: 450px;
   padding: 20px;
   border-radius: 10px;
   margin-left: 50px;
@@ -13,7 +15,7 @@
 @media(max-width:1040px) {
   #blog-posts {
    text-align: center;
-   font-size: 10px;
+   font-size: 9px;
    background-color: #dedede;
    width: 400px;
    height: 300px;

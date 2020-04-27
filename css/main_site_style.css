@@ -39,6 +39,7 @@ html * {
 }
 @media(min-width:900px) {
   #blog-post-container {
+    margin-left: 70px;
     grid-area: bp;
     display: flex;
     flex-wrap: wrap;
