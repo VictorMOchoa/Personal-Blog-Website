@@ -1,0 +1,36 @@
+header {
+  background-color: #008CBA;
+  color: #fff;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px;
+  grid-area: hd;
+}
+
+header a {
+  color: #fff;
+  padding: 10px;
+}
+
+header a:hover {
+  color: orange;
+}
+
+#nav-menu {
+  display: flex;
+  margin-left: auto;
+  flex-flow: row wrap;
+}
+
+#blog-title {
+  display: flex;
+}
+
+#running-icon {
+  font-size: 35px;
+  padding: 10px;
+  color: orange;
+  justify-content: center;
+}

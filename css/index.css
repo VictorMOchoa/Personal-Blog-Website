@@ -1,13 +1,89 @@
-#blog-posts {
+@import "header.css";
+
+#site-container {
+  display: grid;
+
+  grid-template-columns: inherit inherit inherit inherit;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+  "hd hd hd hd"
+  "mr mr mr mr"
+  "blog-2 blog-2 blog-3 blog-3"
+  "sub sub sub sub"
+  "ft ft ft ft"
+  ;
+}
+
+#most-recent-blog {
+  grid-area: mr;
+  background-image: url("../images/treadmill.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+#blog-2 {
+  grid-area: blog-2;
+  background-image: url("../images/log.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#blog-3 {
+  grid-area: blog-3
+}
+
+.blog-post {
+  background-color: #fff;
+  display: flex;
+}
+
+.blog-post h3 {
+  color: orange;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: sub;
+}
+
+#footer {
+  grid-area: ft;
+}
+
+#subscribe-btn {
+    color: #fff;
+    background-color: #008CBA;
+    text-align: center;
+    border: none;
+}
+
+#footer {
+  grid-area: ft;
+  align-items: center;
   text-align: center;
-  background-color: #dedede;
-  width: 200px;
+}
+
+.blog-post {
+  text-align: center;
+  background-color: #fff9e6;
+  color: white;
+  opacity: 0.6;
+  width: auto;
   height: 300px;
   padding: 20px;
   margin-top: 2px;
   margin-bottom: 10px;
-  border-radius: 10px;
-  margin-right: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +92,7 @@
 @media(max-width:899px) {
   #blog-posts {
     text-align: center;
-    background-color: #dedede;
+    /* background-color: #dedede; */
     width: 300px;
     height: 50px;
     padding: 20px;

@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="css/main_site_style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <html>
 
@@ -15,33 +14,50 @@
 
   <body>
 
-    <div id="container">
+    <div id="site-container">
 
-      <header id="header" class="container-element">
-        <span id="running-icon-span">
-          <i class="fas fa-running"></i>
-        </span>
-        <h2 id="blog-name">My Running Blog</h2>
-        <hr id="divider" class="solid">
+      <header>
+        <div id="blog-title">
+          <span id="running-icon">
+            <i class="fas fa-running"></i>
+          </span>
+          <h2>My Running Blog</h2>
+        </div>
+        <div id="nav-menu">
+          <a href="index.html">
+            <h3>Home</h3>
+          </a>
+          <a href="blog_post.html">
+            <h3>Most Recent</h3>
+          </a>
+        </div>
       </header>
-
-      <div id="sidebar-menu" class="container-element">
-          <a href="index.html">Home</a>
-          <a>About Me</a>
-          <a>Guestbook</a>
-          <button type="button" class="btn btn-sm btn-primary disabled">Subscribe</button>
-      </div>
-
-      <div id="blog-post-container">
-        <div id="blog-posts">
+      <section class="blog-post" id="most-recent-blog">
+        <!-- <div> -->
+        <h3>
           <a href="blog_post.html">
             How I learned to love running on the treadmill during quarantine
           </a>
+        </h3>
+        <!-- </div> -->
+      </section>
+      <section class="blog-post" id="blog-2">
+        <div>
+          <h3>
+            Hal Higdon Training Plan Review
+          </h3>
         </div>
-        <div id="blog-posts">Not yet published</div>
-        <div id="blog-posts">TBD</div>
-      </div>
+      </section>
+      <section class="blog-post" id="blog-3">
+        <div>
+          I bought a new FitBit
+        </div>
 
+      </section>
+      <section id="subscribe">
+          <input placeholder="Enter your email"/>
+          <button id="subscribe-btn" disabled>Subscribe</button>
+      </section>
       <footer id="footer" class="container-element">
         <a id="github" href="https://github.com/VictorMOchoa"><i class="fab fa-github fa-sm"></i> VictorMOchoa</a>
       </footer>

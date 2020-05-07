@@ -22,16 +22,7 @@ html * {
   }
 }
 
-#header {
-  margin-left: 60px;
-  grid-area: hd;
-}
 
-#footer {
-  grid-area: ft;
-  align-items: center;
-  text-align: center;
-}
 
 #github {
   color: grey;
@@ -46,20 +37,9 @@ html * {
   }
 }
 
-#sidebar-menu {
-  grid-area: sd;
-}
-
-#sidebar-menu > a {
-  display: flex;
-  margin: 5px 0px;
-  color: orange;
-}
-
-
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 #running-icon-span {
   font-size: 35px;
