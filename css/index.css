@@ -1,18 +1,40 @@
-@import "header.css";
+@import "nav_bar.css";
+@import "blog_theme.css";
+/* @import "footer.css"; */
+
 
 #site-container {
   display: grid;
-
-  grid-template-columns: inherit inherit inherit inherit;
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px;
+  width: 99.5%;
+  height: 100%;
+  grid-template-columns: inherit;
+  grid-template-rows: auto auto auto auto auto auto;
+  height: -webkit-fill-available;
+  grid-gap: 5px;
   grid-template-areas:
-  "hd hd hd hd"
-  "mr mr mr mr"
-  "blog-2 blog-2 blog-3 blog-3"
-  "sub sub sub sub"
-  "ft ft ft ft"
-  ;
+  "hd"
+  "mr"
+  "blog-2"
+  "blog-3"
+  "sub"
+  "ft";
+}
+
+
+@media(min-width: 1000px) {
+  #site-container {
+    display: grid;
+    width: 99.5%;
+    grid-template-columns: inherit inherit inherit inherit;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "hd hd hd hd"
+    "mr mr mr mr"
+    "blog-2 blog-2 blog-3 blog-3"
+    "sub sub sub sub"
+    "ft ft ft ft";
+  }
 }
 
 #most-recent-blog {
@@ -33,7 +55,11 @@
 }
 
 #blog-3 {
-  grid-area: blog-3
+  grid-area: blog-3;
+  background-image: url("../images/fitbit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .blog-post {
@@ -46,14 +72,9 @@
   background-color: black;
 }
 
-a {
-  text-decoration: none;
-}
-
 #subscribe {
   display: flex;
   justify-content: center;
-  align-items: center;
   grid-area: sub;
 }
 
@@ -87,20 +108,4 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media(max-width:899px) {
-  #blog-posts {
-    text-align: center;
-    /* background-color: #dedede; */
-    width: 300px;
-    height: 50px;
-    padding: 20px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    margin-right: 25px;
-    justify-content: center;
-    align-items: center;
-  }
 }

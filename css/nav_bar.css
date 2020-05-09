@@ -1,4 +1,4 @@
-header {
+nav {
   background-color: #008CBA;
   color: #fff;
   width: 100%;
@@ -9,12 +9,12 @@ header {
   grid-area: hd;
 }
 
-header a {
+nav a {
   color: #fff;
   padding: 10px;
 }
 
-header a:hover {
+nav a:hover {
   color: orange;
 }
 

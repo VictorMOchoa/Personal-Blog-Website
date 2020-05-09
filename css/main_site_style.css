@@ -1,5 +1,7 @@
 html * {
   font-family: 'Open Sans', sans-serif;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
 @media(min-width:900px) {
