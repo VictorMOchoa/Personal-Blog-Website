@@ -1,0 +1,20 @@
+html * {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  /* display: contents; */
+  /* width: 9%;  */
+}
+a {
+  text-decoration: none;
+}
+
+#github {
+  color: grey;
+  font-size: 12px;
+}
+
+#running-icon-span {
+  font-size: 35px;
+  color: orange;
+}
