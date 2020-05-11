@@ -5,9 +5,9 @@
 #site-container {
   display: grid;
   width: 99.5%;
-  /* height: fit-content; */
+  height: fit-content;
   grid-template-columns: inherit;
-  grid-template-rows: auto auto auto auto auto 200px;
+  grid-template-rows: auto auto auto auto auto;
   height: -webkit-fill-available;
   grid-gap: 5px;
   grid-template-areas:
@@ -30,6 +30,11 @@ figure {
   display: contents;
 }
 
+figcaption {
+  padding: 12px;
+  align-self: center;
+}
+
 header {
   grid-area: hd;
   background-color: palegoldenrod;
@@ -44,5 +49,6 @@ header {
 }
 
 #avatar {
-  width: 15%;
+  width: 100px;
+  height: 100px;
 }

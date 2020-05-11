@@ -24,7 +24,7 @@
 @media(min-width: 1000px) {
   #site-container {
     display: grid;
-    width: 99.5%;
+    width: 100%;
     grid-template-columns: inherit inherit inherit inherit;
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;

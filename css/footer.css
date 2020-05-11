@@ -21,3 +21,10 @@
   align-items: center;
   text-align: center;
 }
+
+#footer p {
+  font-size: 10px;
+}
+.share-icon {
+  padding: 5px;
+}
