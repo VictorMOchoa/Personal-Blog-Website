@@ -1,6 +1,6 @@
 @import "nav_bar.css";
 @import "blog_theme.css";
-/* @import "footer.css"; */
+@import "footer.css";
 
 
 #site-container {
@@ -12,7 +12,7 @@
   height: -webkit-fill-available;
   grid-gap: 5px;
   grid-template-areas:
-  "hd"
+  "nv"
   "mr"
   "blog-2"
   "blog-3"
@@ -29,7 +29,7 @@
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     grid-template-areas:
-    "hd hd hd hd"
+    "nv nv nv nv"
     "mr mr mr mr"
     "blog-2 blog-2 blog-3 blog-3"
     "sub sub sub sub"
@@ -70,29 +70,6 @@
 .blog-post h3 {
   color: orange;
   background-color: black;
-}
-
-#subscribe {
-  display: flex;
-  justify-content: center;
-  grid-area: sub;
-}
-
-#footer {
-  grid-area: ft;
-}
-
-#subscribe-btn {
-    color: #fff;
-    background-color: #008CBA;
-    text-align: center;
-    border: none;
-}
-
-#footer {
-  grid-area: ft;
-  align-items: center;
-  text-align: center;
 }
 
 .blog-post {
